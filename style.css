@@ -358,220 +358,12 @@ footer{
     background:#FFFBEB;
 }
 
+/* タブレット */
 @media screen and (max-width: 1024px) {
 
     .container {
-        width: 90%;
         width: calc(100% - 40px);
     }
-
-    h2 {
-        width: auto;
-        font-size: 36px;
-        margin-bottom: 40px;
-    }
-
-    h3 {
-        font-size: 24px;
-        margin: 40px 0 24px;
-    }
-
-    /* ヘッダー */
-
-    header {
-        padding: 20px;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .logo {
-        width: 120px;
-    }
-
-    header ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 12px 20px;
-        padding: 0;
-        margin: 0;
-        font-size: 16px;
-    }
-
-    header a {
-        font-size: 16px;
-    }
-
-    /* ヒーロー */
-
-    .hero {
-        padding: 50px 0;
-    }
-
-    .hero .container {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 40px;
-    }
-
-    .hero-text {
-        width: 100%;
-        padding: 0;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-        line-height: 1.45;
-        margin: 24px 0;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
-
-    .btn {
-        margin: 30px auto 0;
-        align-self: center;
-        padding: 16px 28px;
-    }
-
-    /* ヒーロー画像 */
-
-    .hero-images {
-        position: relative;
-        width: 100%;
-        max-width: 360px;
-        height: 360px;
-        min-height: 0;
-        margin: 0 auto;
-    }
-
-    .hero-images img {
-        width: 48%;
-    }
-
-    .image-spice {
-        top: 0;
-        left: 0;
-        bottom: auto;
-    }
-
-    .image-baby {
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-    }
-
-    .image-peach {
-        top: 70px;
-        right: 0;
-        left: auto;
-    }
-
-    /* About */
-
-    #about {
-        padding: 70px 0;
-    }
-
-    .about-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-    }
-
-    .about-image {
-        width: 100%;
-    }
-
-    .about-image img {
-        width: 100%;
-        max-width: 360px;
-        margin: 0 auto;
-    }
-
-    .about-text {
-        width: 100%;
-        max-width: none;
-    }
-
-    .about-text h3 {
-        font-size: 36px;
-        margin: 12px 0 24px;
-    }
-
-    .about-text p {
-        width: 100%;
-        font-size: 15px;
-        line-height: 1.9;
-    }
-
-    /* Works */
-
-    #works {
-        padding: 70px 0;
-    }
-
-    .works {
-        width: 100%;
-        margin-bottom: 70px;
-    }
-
-    .banner-list,
-    .website-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 24px;
-        padding: 0;
-    }
-
-    .work-item,
-    .website-item {
-        width: 100%;
-        height: auto;
-    }
-
-    .website-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* Skills */
-
-    #skills {
-        padding-bottom: 70px;
-    }
-
-    .skills {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .skill-item {
-        width: 100%;
-        padding: 30px 20px;
-    }
-
-    .skill-item h3 {
-        font-size: 24px;
-        margin: 15px 0;
-    }
-
-    /* Contact */
-
-    #contact {
-        padding: 70px 0;
-    }
-
-    .contact-text {
-        margin: 30px 0 40px;
-        font-size: 15px;
-    }
-
-    .contact-btn {
-        margin-top: 30px;
-    }
-}
 
     header {
         padding: 20px 30px;
@@ -627,30 +419,14 @@ footer{
         width: calc(50% - 20px);
         height: auto;
     }
+}
 
+
+/* スマホ */
 @media screen and (max-width: 767px) {
 
     .container {
         width: calc(100% - 40px);
-    }
-
-    .works .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .works-list,
-    .banner-list,
-    .website-list {
-        width: 100%;
-    }
-}
-
-    .banner-list,
-    .website-list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 30px;
     }
 
     h2 {
@@ -796,8 +572,8 @@ footer{
     /* Works */
 
     #works {
-        padding: 70px 0;
         width: 100%;
+        padding: 70px 0;
     }
 
     .works {
@@ -805,15 +581,27 @@ footer{
         margin-bottom: 70px;
     }
 
+    .works .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     .banner-list,
     .website-list {
         display: grid;
         grid-template-columns: 1fr;
         gap: 24px;
+        width: 100%;
         padding: 0;
     }
 
-    .work-item,
+    .work-item {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        height: auto;
+    }
+
     .website-item {
         width: 100%;
         height: auto;
@@ -822,12 +610,6 @@ footer{
     .website-item img {
         width: 100%;
         height: auto;
-    }
-
-     .work-item {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
     }
 
     /* Skills */
@@ -866,3 +648,4 @@ footer{
     .contact-btn {
         margin-top: 30px;
     }
+}
