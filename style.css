@@ -205,9 +205,23 @@ header ul {
     text-align:center;
     font-weight:600;
 }
+.instagram-list li{
+    transition: .3s;
+}
 
-.work-item:hover{
-    transform:translateY(-10px);
+.instagram-list li:hover{
+    transform: translateY(-10px);
+}
+
+.instagram-list img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.instagram-list li:hover img{
     box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
@@ -255,6 +269,32 @@ header ul {
 .website-item img{
     width:520px;
     display:block;
+}
+
+.instagram-list {
+    display: grid;
+    grid-template-columns: repeat(3, 240px);
+    justify-content: center;
+    gap: 24px;
+    margin: 40px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.instagram-list li {
+    list-style: none;
+}
+
+.instagram-list img {
+    width: 240px;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.instagram-list:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 #skills{
@@ -612,8 +652,14 @@ footer{
         height: auto;
     }
 
-.instagram-work {
-    margin-top: 80px;
+    .instagram-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .instagram-list img {
+        width: 100%;
+    }
 }
 
 .work-info {
@@ -630,16 +676,12 @@ footer{
 }
 
 .instagram-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin: 0;
-    padding: 0 0 20px;
     list-style: none;
-    overflow-x: auto;
-}
-
-.instagram-list li {
-    flex: 0 0 260px;
+    margin: 40px 0 0;
+    padding: 0;
 }
 
 .instagram-list img {
@@ -685,4 +727,3 @@ footer{
     .contact-btn {
         margin-top: 30px;
     }
-}
